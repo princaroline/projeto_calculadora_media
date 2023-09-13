@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /*fonte*/
+}
+
+body{
+    background-color: #e7e7e7; /*cor de fundo*/
+    padding-top: 100px; /*margem topo*/
+}
+
+header{
+    display: flex; /*lateral ao lado do outro*/
+    align-items: center; /*centralizado na pagina*/
+    margin-bottom: 40px; /*margem inferior antes do form*/
+}
+
+header img {
+    height: 36px; /*tamanho imagem*/
+    margin-right: 16px; /*margem esquerda*/
+}
+
+header h1{
+    font-size: 40px; /*tamanho da fonte*/
+    font-weight: bold; /*negrito*/
+}
+
+.container { /*criação de blocos na pagina*/
+    max-width: 980px; /*maximo pixel da pagina*/
+    width: 100%; /*100% do bloco ate o maximo de pixel configurado*/
+    margin: 0 auto; /*centralizar horizontal*/
+}
+
+form{
+    display: flex; /*alinha em linha hotizontal*/
+    max-width: 640px; /*maximo pixel*/
+    width: 100%;
+    justify-content: space-between; /*distribuir espaçamento entre elementos*/
+    margin-bottom: 56px; /*margem inferior antes da tabela*/
+}
+
+form input{
+    font-size: 24px; /*tamanho fonte*/
+    background-color: #fff; /*cor de fundo*/
+    border: none; /*retirada da borda*/
+    border-bottom: 2px solid #000; /*borda apenas inferior*/
+    padding: 8px; /*espaçamento entre elementos*/
+}
+
+form button{ /*config botão*/
+    background-color: #009432;/*cor de fundo*/
+    color: #fff; /*cor da fonte*/
+    font-size: 24px; /*tamanho da fonte*/
+    font-weight: bold; /*negrito*/
+    border: none; /*retirada borda*/
+    cursor: pointer; /*forma do cursor quando passa por cima do botão*/
+    padding: 8px; /*espaçamento entre elementos*/
+}
+
+table{
+    width: 100%; 
+}
+
+table th{ /*configuração cabeçalho tabela*/
+    border-bottom: 2px solid #000; /*config borda inferior*/
+    padding: 16px; /*espaçamento*/
+    font-size: 24px; /*tamanho fonte*/
+    font-weight: bold; /*negrito*/
+}
+
+table td{ /*config conteudo da tabela*/
+    padding: 16px 0; /*margem superior e inferior de 16 e nas laterais 0*/
+    text-align: center; /*alinhamento do conteudo das colunas com cabeçalho*/
+    font-size: 18px; /*tamanho fonte*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /*config linha dentro tabela*/
+}
+
+table td img{
+    height: 38px; /*tamanho imagem emotion*/
+}
+
+.resultado{
+    padding: 8px; /*espaçamento*/
+    font-weight: bold; /*negrito*/
+    color:#fff; /*cor fonte*/
+    background-color: #000; /*cor de fundo*/
+    border-radius: 3px; /*borda arredondada*/
+}
+
+.aprovado{
+    background-color: #009432;
+}
+
+.reprovado{
+    background-color: red;
+}
